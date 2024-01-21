@@ -1,0 +1,89 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+:root {
+    font-size: 62.5%;
+
+    --font-family: 'Mulish', sans-serif;
+
+    --base-color-blue: hsl(195, 91%, 25%);
+    --base-color-paleblue: hsl(195, 46%, 40%);
+    --base-color-lightblue: hsl(198, 100%, 98%);
+    --base-color-white: hsl(0, 0%, 100%);
+    --base-color-black: hsl(240, 6%, 13%);
+}
+
+body {
+    background-color: var(--base-color-black);
+}
+
+/*Dimensionar página para versão Mobile*/
+#wrapper {
+    width: 43.0rem;
+    margin: 0 auto;
+
+    background-color: var(--base-color-white);
+}
+
+/*Estilização do elemento Header*/
+header {
+    height: 7.2rem;
+    width: min(43.0rem, 100%);
+
+    background-color: var(--base-color-blue);
+    font-family: var(--font-family);
+
+    /*Distribuição dos elementos contidos no elemento header*/
+    display: flex;
+    padding: 1.2rem 2.8rem;
+    gap: 2.6rem;
+}
+
+/*Estilização dos elementos contidos no elemento Header*/
+/*Estilização do logotipo e da foto do usuário*/
+header .symbol {
+    width: 4.0rem;
+    height: 4.0rem;
+
+    border-radius: 50%;
+}
+
+/*Estilização específico do logotipo*/
+header .symbol:nth-child(1) {
+    background-color: var(--base-color-white);
+    padding: 0.8rem;
+}
+
+/*Estilizar a caixa de texto - input*/
+/*Ocultar o conteúdo exibido pelo elemento label*/
+.content label {
+    width: 0.1rem;
+    height: 0.1rem;
+    overflow: hidden;
+    position: absolute;
+}
+
+/*Estilizar o elemento input*/
+.content input {
+    width: 24.1rem;
+    height: 4.0rem;
+
+    padding: 1.4rem;
+
+    background-color: var(--base-color-paleblue);
+    border: 0;
+    border-radius: 0.4rem;
+
+    font-family: var(--font-family);
+}
+
+/*Estilizar o texto contido no placeholder do elemento input*/
+.content input::placeholder {
+    opacity: 1;
+    color: var(--base-color-white);
+}
