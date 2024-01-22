@@ -87,3 +87,54 @@ header .symbol:nth-child(1) {
     opacity: 1;
     color: var(--base-color-white);
 }
+
+/*Main*/
+
+/*Estilizar a Foto do gato na penumbra*/
+main #main-photo {
+    width: 100%;
+    height: 21.9rem;
+}
+
+/*Estilizar o texto contido no elemento article*/
+article {
+    width: min(38rem, 100%);
+    margin: 3.2px auto;
+
+    font-family: var(--font-family);
+}
+
+article h1 {
+    color: var(--base-color-black);
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 160%;
+}
+
+/*Estilização do sinal de positivo e negativo*/
+article div {
+    display: flex;
+    gap: 1.2rem;
+}
+
+div .signal {
+    margin-top: 0.8rem;
+    background-color: var(--base-color-blue);
+
+    width: 4.0rem;
+    height: 4.0rem;
+    padding: 1.2rem;
+
+    border-radius: 50%;
+}
+
+/*Estilização do texto contido no elemento article*/
+article p {
+    margin-top: 3.2rem;
+    color: var(--base-color-black);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 160%;
+}
